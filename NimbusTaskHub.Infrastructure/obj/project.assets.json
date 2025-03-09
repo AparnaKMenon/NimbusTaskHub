@@ -1,0 +1,131 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "NimbusTaskHub.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "NimbusTaskHub.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NimbusTaskHub.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NimbusTaskHub.Application.dll": {}
+        }
+      },
+      "NimbusTaskHub.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/NimbusTaskHub.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NimbusTaskHub.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NimbusTaskHub.Application/1.0.0": {
+      "type": "project",
+      "path": "../NimbusTaskHub.Application/NimbusTaskHub.Application.csproj",
+      "msbuildProject": "../NimbusTaskHub.Application/NimbusTaskHub.Application.csproj"
+    },
+    "NimbusTaskHub.Domain/1.0.0": {
+      "type": "project",
+      "path": "../NimbusTaskHub.Domain/NimbusTaskHub.Domain.csproj",
+      "msbuildProject": "../NimbusTaskHub.Domain/NimbusTaskHub.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "NimbusTaskHub.Application >= 1.0.0",
+      "NimbusTaskHub.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\aparn\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Projects\\NimbusTaskHub\\NimbusTaskHub.Infrastructure\\NimbusTaskHub.Infrastructure.csproj",
+      "projectName": "NimbusTaskHub.Infrastructure",
+      "projectPath": "C:\\Projects\\NimbusTaskHub\\NimbusTaskHub.Infrastructure\\NimbusTaskHub.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\aparn\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\NimbusTaskHub\\NimbusTaskHub.Infrastructure\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\aparn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "C:\\Projects\\NimbusTaskHub\\NimbusTaskHub.Application\\NimbusTaskHub.Application.csproj": {
+              "projectPath": "C:\\Projects\\NimbusTaskHub\\NimbusTaskHub.Application\\NimbusTaskHub.Application.csproj"
+            },
+            "C:\\Projects\\NimbusTaskHub\\NimbusTaskHub.Domain\\NimbusTaskHub.Domain.csproj": {
+              "projectPath": "C:\\Projects\\NimbusTaskHub\\NimbusTaskHub.Domain\\NimbusTaskHub.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+            "version": "[9.0.200, 9.0.200]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

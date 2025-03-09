@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimbusTaskHub.Domain", "NimbusTaskHub.Domain\NimbusTaskHub.Domain.csproj", "{1DFA4333-4FD6-4CA4-8892-F0878ED16682}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{77BDAB43-DECE-447F-9BD2-BF3592335DA7}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimbusTaskHub.Application", "NimbusTaskHub.Application\NimbusTaskHub.Application.csproj", "{80FB7E62-CD2C-4D6B-A5F1-16289D9F9BC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimbusTaskHub.Infrastructure", "NimbusTaskHub.Infrastructure\NimbusTaskHub.Infrastructure.csproj", "{9C01B8AA-C8F5-4347-B59B-674A6858C0C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimbusTaskHub.API", "NimbusTaskHub.API\NimbusTaskHub.API.csproj", "{C338A294-9B11-4361-AF76-BC90CB201E68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimbusTaskHub.Presentation", "NimbusTaskHub.Presentation\NimbusTaskHub.Presentation.csproj", "{CCC85017-6B20-46D0-A73C-58B7096A63A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimbusTaskHub.Tests", "NimbusTaskHub.Tests\NimbusTaskHub.Tests.csproj", "{216D8588-9CAD-4FCA-86B7-C747AC688A79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DFA4333-4FD6-4CA4-8892-F0878ED16682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DFA4333-4FD6-4CA4-8892-F0878ED16682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DFA4333-4FD6-4CA4-8892-F0878ED16682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DFA4333-4FD6-4CA4-8892-F0878ED16682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80FB7E62-CD2C-4D6B-A5F1-16289D9F9BC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80FB7E62-CD2C-4D6B-A5F1-16289D9F9BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80FB7E62-CD2C-4D6B-A5F1-16289D9F9BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80FB7E62-CD2C-4D6B-A5F1-16289D9F9BC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C01B8AA-C8F5-4347-B59B-674A6858C0C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C01B8AA-C8F5-4347-B59B-674A6858C0C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C01B8AA-C8F5-4347-B59B-674A6858C0C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C01B8AA-C8F5-4347-B59B-674A6858C0C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C338A294-9B11-4361-AF76-BC90CB201E68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C338A294-9B11-4361-AF76-BC90CB201E68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C338A294-9B11-4361-AF76-BC90CB201E68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C338A294-9B11-4361-AF76-BC90CB201E68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCC85017-6B20-46D0-A73C-58B7096A63A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCC85017-6B20-46D0-A73C-58B7096A63A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCC85017-6B20-46D0-A73C-58B7096A63A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCC85017-6B20-46D0-A73C-58B7096A63A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{216D8588-9CAD-4FCA-86B7-C747AC688A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{216D8588-9CAD-4FCA-86B7-C747AC688A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{216D8588-9CAD-4FCA-86B7-C747AC688A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{216D8588-9CAD-4FCA-86B7-C747AC688A79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

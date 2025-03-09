@@ -1,6 +1,6 @@
-# Nimbus-Task-Hub
+﻿# Nimbus-Task-Hub
 
-Nimbus Task Hub is a cloud-based task management system built with .NET 8, Azure, and Docker, showcasing modern backend development practices.
+Nimbus Task Hub is a cloud-based task management system built with .NET 9, Azure, and Docker, showcasing modern backend development practices.
 
 ## Overview
 
@@ -40,7 +40,7 @@ Nimbus Task Hub is designed to help teams manage tasks efficiently. This project
 
 ## Tech Stack
 
-- **Backend:** .NET 8 Web API
+- **Backend:** .NET 9 Web API
 - **Database:** Microsoft SQL Server (SQL Server Express for local development or Azure SQL for production)
 - **Cloud:** Microsoft Azure (App Service, Functions, SendGrid, etc.)
 - **Containerization:** Docker
@@ -51,11 +51,38 @@ Nimbus Task Hub is designed to help teams manage tasks efficiently. This project
 
 ### Prerequisites
 
-- [Visual Studio Community Edition](https://visualstudio.microsoft.com/downloads/) with .NET 8 support
+- [Visual Studio Community Edition](https://visualstudio.microsoft.com/downloads/) with .NET 9 support
 - [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) or [Azure SQL](https://azure.microsoft.com/en-us/services/sql-database/)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 - [Git](https://git-scm.com/)
 - (Optional) [Git Extensions](https://gitextensions.github.io/)
 
+## Dependencies
 
+NimbusTaskHub.sln
+├── NimbusTaskHub.Domain         (No dependencies) 🟢
+│   ├── Entities
+│   ├── ValueObjects
+│   ├── Interfaces
+│   └── DomainEvents
+├── NimbusTaskHub.Application    (Depends on Domain) 🟡
+│   ├── Interfaces
+│   ├── Services
+│   ├── DTOs
+│   ├── Commands
+│   ├── Queries
+│   └── Handlers
+├── NimbusTaskHub.Infrastructure (Depends on Application & Domain) 🟠
+│   ├── Data
+│   │   ├── DbContext
+│   │   └── Migrations
+│   ├── Repositories
+│   └── ExternalServices
+├── NimbusTaskHub.API            (Depends on Application, Infrastructure & Domain) 🔴
+│   ├── Controllers
+│   ├── Models
+│   └── Startup.cs / Program.cs
+└── NimbusTaskHub.Presentation (Optional) (Depends on API) 🔵
+    └── Pages (Blazor UI)
+     
